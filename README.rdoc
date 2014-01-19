@@ -5,7 +5,14 @@
 
 On your command-line:
 
-    $ gem install print_debug
+    $ gem install print_debug binding_of_caller
+
+
+Or in your Gemfile:
+
+    gem 'print_debug'
+    gem 'binding_of_caller'
+
 
 In Ruby:
 
