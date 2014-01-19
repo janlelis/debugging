@@ -5,6 +5,8 @@ module PrintDebug
 
   def at(label = nil)
     caller[0].rindex( /:(\d+)(:in (`.*'))?$/ )
-    puts "#{ label && "#{label} " }@ #{ $3 && "method #$3, " }line #$1 of file #$`"
+    puts "#{ label && Paint["#{label} ", :yellow] }@"\
+         " #{ $3 && "method #{ Paint[$3, :red] }, " }line "\
+         "#{ Paint[$1, :blue]} of file #{ Paint[$`, :green]}"
   end
 end
