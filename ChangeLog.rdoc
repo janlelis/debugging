@@ -1,0 +1,16 @@
+=== 1.0.0 / 2014-01-19
+
+* Adjusted concept: Only helper method style
+* Removed:
+  * dd
+  * binding.vars
+* Added:
+  * beep
+  * repl
+* Renamed:
+  * oo -> at
+  * cc -> callstack
+  * mm -> mof
+  * regexp_visualize -> regex
+* Moved from zucker 13.1 gem into its own gem
+

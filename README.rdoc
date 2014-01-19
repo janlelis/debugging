@@ -1,0 +1,81 @@
+= Collection of Ruby print debugging tools {<img src="https://travis-ci.org/janlelis/print_debug.png" />}[https://travis-ci.org/janlelis/print_debug]
+
+Provides print debugging tools. A little bit like {letters.rb}[https://lettersrb.com], but simpler and mostly with words.
+
+== Setup
+
+On your command-line:
+
+    $ gem install print_debug
+
+In Ruby:
+
+    require 'print_debug/all'
+
+== Included Helpers
+
+This gem only adds private methods to +Object+, which means you have to pass in the object(s) you want to analyze, instead of calling the method on the object.
+
+
+=== at(label = nil)
+
+    [label] @ method `...', line ... of file ....
+
+
+=== beep
+
+    Lets your terminal bell ring.
+
+
+=== callstack
+
+    <main>
+      start
+        catch
+          block in start
+            eval_input
+              each_top_level_statement
+                catch
+                  block in each_top_level_statement
+                    loop
+                      block (2 levels) in each_top_level_statement
+                        block in eval_input
+                          signal_status
+                            block (2 levels) in eval_input
+                              evaluate
+                                evaluate
+                                  eval
+                                    irb_binding
+
+
+=== mof(obj, depth = 1)
+
+"methods of"
+
+    ...
+
+
+=== q(obj)
+
+    q :is_like, ?p, "but on one line"
+
+
+=== regex(regex, string, groups)
+
+    A powerful tool to find out, if a string matches against the regex:
+
+    ....
+
+
+=== repl
+
+    Starts your favorite IRB session.
+
+
+== Also See
+
+https://github.com/davejacobs/letters
+
+== J-_-L
+
+Copyright (c) 2010-2014 Jan Lelis. MIT License. Originated from the zucker gem.
