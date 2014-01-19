@@ -1,9 +1,7 @@
-= Collection of Ruby Print Debugging Tools {<img src="https://travis-ci.org/janlelis/debugging.png" />}[https://travis-ci.org/janlelis/debugging]
+= Ruby Print Debugging {<img src="https://travis-ci.org/janlelis/debugging.png" />}[https://travis-ci.org/janlelis/debugging]
 
 
 == Setup
-
-On your command-line:
 
     $ gem install debugging binding_of_caller
 
@@ -19,7 +17,7 @@ In Ruby:
     require 'debugging/all'
 
 
-== Included Helpers
+== Methods
 
 === at(label = nil)
 
