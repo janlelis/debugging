@@ -4,6 +4,6 @@
   callstack
   mof
   q
-  regex
+  re
   repl
 ].each{ |m| require_relative(m) }

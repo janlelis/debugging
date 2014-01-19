@@ -11,7 +11,7 @@
   * oo -> at
   * cc -> callstack
   * mm -> mof
-  * regexp_visualize -> regex
+  * regexp_visualize -> re
 * Method List: Display all available ancestors by default and add third argument for grepping
 * Moved from zucker 13.1 gem into its own gem
 
