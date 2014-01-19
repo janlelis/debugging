@@ -1,4 +1,4 @@
 require_relative 'debugging/version'
 require 'paint'
 
-Object.include Debugging
+Object.send :include, Debugging
