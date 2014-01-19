@@ -1,6 +1,6 @@
-require 'print_debug'
+require 'debugging'
 
-module PrintDebug
+module Debugging
   private
 
   def callstack

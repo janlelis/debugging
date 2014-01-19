@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'print_debug/q'
+require 'debugging/q'
 
 describe 'q' do
   it 'should output the same as p for a single arg' do

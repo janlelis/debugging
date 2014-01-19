@@ -1,3 +1,3 @@
-module PrintDebug
+module Debugging
   VERSION = "0.1.0"
 end
