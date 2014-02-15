@@ -1,3 +1,8 @@
+=== 1.0.1 / 2014-02-15
+
+* Bump binding.repl version
+
+
 === 1.0.0 / 2014-01-19
 
 * Adjusted concept: Only helper method style
