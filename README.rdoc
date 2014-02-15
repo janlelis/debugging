@@ -8,7 +8,7 @@
 
 Or in your Gemfile:
 
-    gem 'debugging'
+    gem 'debugging', require: 'debugging/all'
     gem 'binding_of_caller'
 
 
