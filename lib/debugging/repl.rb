@@ -11,6 +11,6 @@ module Debugging
   private
 
   def repl
-    binding.of_caller(1).repl.auto
+    binding.of_caller(1).repl!
   end
 end
