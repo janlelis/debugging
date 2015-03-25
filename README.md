@@ -1,35 +1,29 @@
-= Ruby Print Debugging {<img src="https://travis-ci.org/janlelis/debugging.png" />}[https://travis-ci.org/janlelis/debugging]
+# Ruby Print Debugging [<img src="https://travis-ci.org/janlelis/debugging.png" />](https://travis-ci.org/janlelis/debugging)
 
-
-== Setup
+## Setup
 
     $ gem install debugging binding_of_caller
-
 
 Or in your Gemfile:
 
     gem 'debugging', require: 'debugging/all'
     gem 'binding_of_caller'
 
-
 In Ruby:
 
     require 'debugging/all'
 
+## Methods
 
-== Methods
-
-=== at(label = nil)
+### at(label = nil)
 
     [label] @ method `...', line ... of file ....
 
-
-=== beep
+### beep
 
 Lets your terminal bell ring.
 
-
-=== callstack
+### callstack
 
     <main>
       start
@@ -49,8 +43,7 @@ Lets your terminal bell ring.
                                   eval
                                     irb_binding
 
-
-=== mof(obj, depth = nil)
+### mof(obj, depth = nil)
 
 "methods of:"
 
@@ -95,29 +88,25 @@ Lets your terminal bell ring.
     BasicObject
     ==  equal?  !  !=  instance_eval  instance_exec  __send__  __id__
 
-
-=== q(*args)
+### q(*args)
 
     q :is_like, ?p, "but on one line"
 
-
-=== re(string, regex, groups = nil)
+### re(string, regex, groups = nil)
 
 Assists you when matching regexes againts strings. Try this one:
 
     re "mail@janlelis.de", /\b([A-Z0-9._%+-]+)@([A-Z0-9.-]+\.[A-Z]{2,10})\b/i, 0..2
 
-
-=== repl
+### repl
 
 Starts your favorite IRB session.
 
-
-== Also See
+## Also See
 
 https://github.com/davejacobs/letters
 
+## J-_-L
 
-== J-_-L
-
-Copyright (c) 2010-2015 Jan Lelis. MIT License. Originated from the {zucker}[http://rubyzucker.info] gem.
+Copyright (c) 2010-2015 Jan Lelis. MIT License. Originated from the
+[zucker](http://rubyzucker.info) gem.
