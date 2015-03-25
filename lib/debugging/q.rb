@@ -4,6 +4,6 @@ module Debugging
   private
 
   def q(*args)
-    puts args.map{ |e| Paint[e.inspect, :random] }*'  ' unless args.empty?
+    puts args.map{ |e| Paint[e.inspect, Paint.random] }*'  ' unless args.empty?
   end
 end
