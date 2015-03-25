@@ -68,6 +68,35 @@ Prints out your current callstack. For example:
                                 irb_binding
 ```
 
+### howtocall(obj = self, method_or_proc)
+
+Displays parameter names and types for a proc or method (identified by a symbol):
+
+```ruby
+def function(a, b = 3, &c)
+end
+howtocall :function #=> function(a, b, &c)
+```
+
+What is not visible in the example above: All optional parameters are displayed underlined.
+
+If you want to access a function that is defined on an other object than the current one,
+you can pass it as an optional parameter:
+
+```ruby
+howtocall FileUtils, :cd #=> cd(dir, options, &block)
+howtocall Open3, :popen3 #=> popen3(*cmd, **opts, &block)
+
+```
+
+An example with lambdas and keyword arguments:
+
+```ruby
+a = ->(filter: /\A.*\z/, string:){ string[filter] }
+howtocall a #=> call(string:, filter:)
+```
+
+
 ### mof(obj, depth = nil)
 
 "Methods of": Prints out available methods, ordered by modules:
