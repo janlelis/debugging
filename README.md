@@ -72,8 +72,11 @@ Prints out your current callstack. For example:
 
 "Methods of": Prints out available methods, ordered by modules:
 
+```ruby
+mof [1,2,3]
 ```
->> mof [1,2,3]
+
+```
 ###
 Eigenclass
 

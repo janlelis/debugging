@@ -1,6 +1,7 @@
 ### 1.1.0
 
 *   Drop support for Ruby 1
+*   Change output from `mof`, now only returns singleton methods per module for modules
 *   Make q compatible with paint ~> 1.0
 
 
