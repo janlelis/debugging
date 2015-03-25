@@ -1,5 +1,6 @@
 ### 1.1.0
 
+*   Drop support for Ruby 1
 *   Make q compatible with paint ~> 1.0
 
 
