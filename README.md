@@ -1,4 +1,4 @@
-# Ruby Print Debugging [<img src="https://travis-ci.org/janlelis/debugging.png" />](https://travis-ci.org/janlelis/debugging)
+# Ruby Print Debugging [<img="https://badge.fury.io/rb/debugging.svg" />](http://badge.fury.io/rb/debugging) [<img src="https://travis-ci.org/janlelis/debugging.png" />](https://travis-ci.org/janlelis/debugging)
 
 Helps you to introspect and debug your code.
 
@@ -18,7 +18,7 @@ In Ruby:
 require 'debugging/all'
 ```
 
-Instead of requiring all debugging functions, it is possible to require only one function, e.g:
+Instead of requiring all, you can also require only one function, e.g:
 
 ```ruby
 require 'debugging/q'
