@@ -1,4 +1,4 @@
-# Ruby Print Debugging [<img="https://badge.fury.io/rb/debugging.svg" />](http://badge.fury.io/rb/debugging) [<img src="https://travis-ci.org/janlelis/debugging.png" />](https://travis-ci.org/janlelis/debugging)
+# Ruby Print Debugging [![version](https://badge.fury.io/rb/debugging.svg)](https://badge.fury.io/rb/debugging) [<img src="https://travis-ci.org/janlelis/debugging.png" />](https://travis-ci.org/janlelis/debugging)
 
 Helps you to introspect and debug your code.
 
