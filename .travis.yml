@@ -10,7 +10,13 @@ rvm:
 - jruby-head
 - jruby-9000
 
+env:
+- JRUBY_OPTS="--2.1"
+
 cache:
 - bundler
+
+allow_failures:
+- rbx-2
 
 bundler_args: --without full_support
