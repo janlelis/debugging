@@ -1,10 +1,6 @@
 require 'spec_helper'
 require 'debugging/howtocall'
 
-require 'fileutils'
-require 'open3'
-
-
 describe "howtocall" do
   it "displays method parameters" do
     def function(a, b)
@@ -76,18 +72,3 @@ describe "howtocall" do
   end
 
 end
-
-__END__
-```ruby
-howtocall FileUtils, :cd #=> cd(dir, options, &block)
-howtocall Open3, :popen3 #=> popen3(*cmd, **opts, &block)
-
-```
-
-An example with lambdas and keyword arguments:
-
-```ruby
-a = ->(filter: /\A.*\z/, string:){ string[filter] }
-howtocall a #=> call(string:, filter:)
-
-
