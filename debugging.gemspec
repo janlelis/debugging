@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.email         = "mail@janlelis.de"
   gem.homepage      = "https://github.com/janlelis/debugging"
 
-  gem.files         = Dir['{**/}{.*,*}'].select { |path| File.file?(path) }
+  gem.files         = Dir['{**/}{.*,*}'].select { |path| File.file?(path) && path !~ /pkg/ }
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
