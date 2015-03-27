@@ -1,6 +1,8 @@
 require 'debugging'
 
 module Debugging
+  private
+
   def howtocall(object = self, method_or_proc)
     if method_or_proc.is_a? Proc
       params = method_or_proc.parameters
