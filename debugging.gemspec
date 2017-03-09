@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.required_ruby_version = '~> 2.0'
 
-  gem.add_dependency 'paint', '>= 0.9', '< 2.0'
+  gem.add_dependency 'paint', '>= 0.9', '< 3.0'
   gem.add_dependency 'binding.repl', '~> 3.0'
 
   gem.add_development_dependency 'bundler', '~> 1.0'
