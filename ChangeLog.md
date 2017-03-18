@@ -1,5 +1,10 @@
 ## ChangeLog
 
+### 1.1.1 / 2017-03-18
+
+* Make howtocall private
+* Relax paint dependency (allow paint versions 2.x)
+
 ### 1.1.0 / 2015-03-26
 
 * Added:
