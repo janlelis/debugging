@@ -1,33 +1,37 @@
-# encoding: utf-8
+# # #
+# Get gemspec info
 
-require 'rubygems'
+gemspec_file = Dir['*.gemspec'].first
+gemspec = eval File.read(gemspec_file), binding, gemspec_file
+info = "#{gemspec.name} | #{gemspec.version} | " \
+       "#{gemspec.runtime_dependencies.size} dependencies | " \
+       "#{gemspec.files.size} files"
 
-begin
-  require 'bundler'
-rescue LoadError => e
-  warn e.message
-  warn "Run `gem install bundler` to install Bundler."
-  exit -1
+
+# # #
+# Gem build and install task
+
+desc info
+task :gem do
+  puts info + "\n\n"
+  print "  "; sh "gem build #{gemspec_file}"
+  FileUtils.mkdir_p 'pkg'
+  FileUtils.mv "#{gemspec.name}-#{gemspec.version}.gem", 'pkg'
+  puts; sh %{gem install --no-document pkg/#{gemspec.name}-#{gemspec.version}.gem}
 end
 
-begin
-  Bundler.setup(:development)
-rescue Bundler::BundlerError => e
-  warn e.message
-  warn "Run `bundle install` to install missing gems."
-  exit e.status_code
+
+# # #
+# Start an IRB session with the gem loaded
+
+desc "#{gemspec.name} | IRB"
+task :irb do
+  sh "irb -I ./lib -r #{gemspec.name.gsub '-','/'}"
 end
 
-require 'rake'
 
-require 'rubygems/tasks'
-Gem::Tasks.new
-
-require 'rdoc/task'
-RDoc::Task.new do |rdoc|
-  rdoc.title = "ruby_version"
-end
-task :doc => :rdoc
+# # #
+# Spec
 
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new

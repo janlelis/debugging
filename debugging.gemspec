@@ -26,5 +26,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 10.1'
   gem.add_development_dependency 'rdoc', '~> 3.0'
   gem.add_development_dependency 'rspec', '~> 2.4'
-  gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
 end
