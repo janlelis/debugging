@@ -169,5 +169,5 @@ Starts your favorite IRB session from the current binding.
 
 ## J-_-L
 
-Copyright (c) 2010-2017 Jan Lelis. MIT License. Originated from the
+Copyright (c) 2010-2018 Jan Lelis. MIT License. Originated from the
 [zucker](https://github.com/janlelis/sugar_refinery) gem.
