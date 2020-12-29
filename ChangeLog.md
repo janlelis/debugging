@@ -1,5 +1,9 @@
 ## ChangeLog
 
+### 1.1.2 / 2020-12-29 (unreleased)
+
+* Relax required Ruby version
+
 ### 1.1.1 / 2017-03-18
 
 * Make howtocall private
