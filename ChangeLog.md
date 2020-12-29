@@ -1,6 +1,6 @@
 ## ChangeLog
 
-### 1.1.2 / 2020-12-29 (unreleased)
+### 1.1.2 / 2020-12-29
 
 * Relax required Ruby version
 
