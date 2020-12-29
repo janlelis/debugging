@@ -1,4 +1,4 @@
-# Ruby Print Debugging [![version](https://badge.fury.io/rb/debugging.svg)](https://badge.fury.io/rb/debugging) [<img src="https://travis-ci.org/janlelis/debugging.svg" />](https://travis-ci.org/janlelis/debugging)
+# Ruby Print Debugging [![version](https://badge.fury.io/rb/debugging.svg)](https://badge.fury.io/rb/debugging) [<img src="https://github.com/janlelis/debugging/workflows/Test/badge.svg" />](https://github.com/janlelis/debugging/actions?query=workflow%3ATest)
 
 Helps you to introspect and debug your code.
 
@@ -169,5 +169,5 @@ Starts your favorite IRB session from the current binding.
 
 ## J-_-L
 
-Copyright (c) 2010-2018 Jan Lelis. MIT License. Originated from the
+Copyright (c) 2010-2020 Jan Lelis. MIT License. Originated from the
 [zucker](https://github.com/janlelis/sugar_refinery) gem.
