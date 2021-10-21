@@ -33,8 +33,10 @@ end
 # # #
 # Spec
 
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new
+desc "#{gemspec.name} | Spec"
+task :spec do
+  sh "rspec"
+end
 
 task :test    => :spec
 task :default => :spec
