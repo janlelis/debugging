@@ -8,7 +8,7 @@ Helps you to introspect and debug your code.
 Install gem:
 
 ```
-$ gem install debugging binding_of_caller
+$ gem install debugging
 ```
 
 
@@ -28,7 +28,6 @@ In a bundler project, you will need to add the gem to your project's `Gemfile`:
 
 ```ruby
 gem 'debugging', require: 'debugging/all'
-gem 'binding_of_caller'
 ```
 
 ## Methods
@@ -162,10 +161,6 @@ Assists you when matching regexes againts strings. Try this one:
 ```ruby
 re "mail@janlelis.de", /\b([A-Z0-9._%+-]+)@([A-Z0-9.-]+\.[A-Z]{2,10})\b/i, 0..2
 ```
-
-### repl
-
-Starts your favorite IRB session from the current binding.
 
 ## J-_-L
 
