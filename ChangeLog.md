@@ -1,9 +1,8 @@
 ## ChangeLog
 
-### 2.0.0 / 2021-12-30 (unreleased)
+### 2.0.0 / 2021-12-30
 
 * Remove `debugging/repl`, since Ruby now has `binding.irb`
-
 
 ### 1.1.2 / 2020-12-29
 

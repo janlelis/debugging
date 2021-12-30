@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Debugging
-  VERSION = "1.1.2".freeze
+  VERSION = "2.0.0"
 end
