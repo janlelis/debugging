@@ -164,5 +164,5 @@ re "mail@janlelis.de", /\b([A-Z0-9._%+-]+)@([A-Z0-9.-]+\.[A-Z]{2,10})\b/i, 0..2
 
 ## J-_-L
 
-Copyright (c) 2010-2021 Jan Lelis. MIT License. Originated from the
+Copyright (c) 2010-2022 Jan Lelis. MIT License. Originated from the
 [zucker](https://github.com/janlelis/sugar_refinery) gem.
