@@ -95,57 +95,6 @@ a = ->(filter: /\A.*\z/, string:){ string[filter] }
 howtocall a #=> call(string:, filter:)
 ```
 
-
-### mof(obj, depth = nil)
-
-"Methods of": Prints out available methods, ordered by modules:
-
-```ruby
-mof [1,2,3]
-```
-
-```
-###
-Eigenclass
-
-Array
-inspect  to_s  to_a  to_h  to_ary  frozen?  ==  eql?  hash  []  []=  at  fet
-ch  first  last  concat  <<  push  pop  shift  unshift  insert  each  each_i
-ndex  reverse_each  length  size  empty?  find_index  index  rindex  join  r
-everse  reverse!  rotate  rotate!  sort  sort!  sort_by!  collect  collect!
- map  map!  select  select!  keep_if  values_at  delete  delete_at  delete_i
-f  reject  reject!  zip  transpose  replace  clear  fill  include?  <=>  sli
-ce  slice!  assoc  rassoc  +  *  -  &  |  uniq  uniq!  compact  compact!  fl
-atten  flatten!  count  shuffle!  shuffle  sample  cycle  permutation  combi
-nation  repeated_permutation  repeated_combination  product  take  take_whil
-e  drop  drop_while  bsearch  pack
-
-Enumerable
-to_a  entries  to_h  sort  sort_by  grep  count  find  detect  find_index  f
-ind_all  select  reject  collect  map  flat_map  collect_concat  inject  red
-uce  partition  group_by  first  all?  any?  one?  none?  min  max  minmax
-min_by  max_by  minmax_by  member?  include?  each_with_index  reverse_each
- each_entry  each_slice  each_cons  each_with_object  zip  take  take_while
- drop  drop_while  cycle  chunk  slice_before  lazy
-
-Object
-
-Debugging
-
-Kernel
-nil?  ===  =~  !~  eql?  hash  <=>  class  singleton_class  clone  dup  tain
-t  tainted?  untaint  untrust  untrusted?  trust  freeze  frozen?  to_s  ins
-pect  methods  singleton_methods  protected_methods  private_methods  public
-_methods  instance_variables  instance_variable_get  instance_variable_set
-instance_variable_defined?  remove_instance_variable  instance_of?  kind_of?
-  is_a?  tap  send  public_send  respond_to?  extend  display  method  publi
-c_method  singleton_method  define_singleton_method  object_id  to_enum  enu
-m_for
-
-BasicObject
-==  equal?  !  !=  instance_eval  instance_exec  __send__  __id__
-```
-
 ### q(*args)
 
 Like `Kernel#p`, but with colors on one line:

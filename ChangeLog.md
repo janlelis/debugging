@@ -1,5 +1,9 @@
 ## ChangeLog
 
+### 2.1.0 / unreleased
+
+* Remove `mof`; use looksee, object shadow, or IRB's own ls for reliable lookup path inspection
+
 ### 2.0.0 / 2021-12-30
 
 * Remove `debugging/repl`, since Ruby now has `binding.irb`
