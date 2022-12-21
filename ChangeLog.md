@@ -2,7 +2,8 @@
 
 ### 2.1.0 / unreleased
 
-* Remove `mof`; use looksee, object shadow, or IRB's own ls for reliable lookup path inspection
+* Remove `debugging/mof`; use looksee, object shadow, or IRB's own ls for reliable lookup path inspection
+* Fix that `debugging/all` also loads howtocall
 
 ### 2.0.0 / 2021-12-30
 
