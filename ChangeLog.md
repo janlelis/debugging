@@ -1,5 +1,9 @@
 ## ChangeLog
 
+### 2.1.1 / 2025-12-25
+
+* Relax Ruby requirement to allow Ruby 4.0
+
 ### 2.1.0 / 2022-12-25
 
 * Remove `debugging/mof`; use looksee, object shadow, or IRB's own ls for reliable lookup path inspection
