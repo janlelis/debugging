@@ -23,5 +23,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'paint', '>= 0.9', '< 3.0'
 
   gem.add_development_dependency 'rake', '~> 13.0'
-  gem.add_development_dependency 'rspec', '~> 2.99'
+  gem.add_development_dependency 'rspec', '~> 3.13'
 end
